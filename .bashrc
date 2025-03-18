@@ -3,6 +3,10 @@ alias xcp="termux-clipboard-set"
 alias xpaste="termux-clipboard-get"
 alias xshd="pkill sshd"
 
+# best audio but no better than 480p
+alias ytv="yt-dlp -S "height:480" --merge-output-format mp4"
+alias yta="yt-dlp -x --audio-format mp3"
+
 alias speak="termux-tts-speak"
 
 function y() {
