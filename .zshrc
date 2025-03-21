@@ -1,4 +1,19 @@
+PS1='%F{blue}%n@%~%f$ '
 PATH="$PATH:$HOME/.local/bin"
+
+[[ -r ~/.zsh/znap/znap.zsh ]] ||
+    git clone --depth 1 -- \
+        https://github.com/marlonrichert/zsh-snap.git ~/.zsh/znap
+source ~/.zsh/znap/znap.zsh
+
+# enable plugins
+source ~/.zsh/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/marlonrichert/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/.zsh/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+export TERM=xterm
+export EDITOR='hx'
 
 alias ll="ls -lah"
 alias xcp="termux-clipboard-set"
