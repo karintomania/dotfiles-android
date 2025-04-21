@@ -13,8 +13,10 @@ source ~/.zsh/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 export TERM=xterm
-export EDITOR='hx'
+export EDITOR='nvim'
 
+alias nv="nvim"
+alias lg="lazygit"
 alias ll="ls -lah"
 alias xcp="termux-clipboard-set"
 alias xpaste="termux-clipboard-get"
