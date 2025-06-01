@@ -22,6 +22,8 @@ alias xcp="termux-clipboard-set"
 alias xpaste="termux-clipboard-get"
 alias xshd="pkill sshd"
 alias mkcdir='f() { mkdir -- "$1" && cd -- "$1" }; f'
+alias what="echo $(whoami)@$(hostname)"
+
 
 # best audio but no better than 480p
 alias ytv="yt-dlp -S "height:480" --merge-output-format mp4"
